@@ -1,6 +1,16 @@
 import { Flex, HStack, Text } from "@chakra-ui/react";
 
-export const Timer = ({ timer }) => {
+interface DefaultRemainingTime {
+  timer: {
+    seconds: string
+    minutes: string
+    hours: string
+    days: string
+    now: boolean
+  }
+}
+
+export const Timer = ({ timer }: DefaultRemainingTime) => {
   const day0 = Number(timer.days) >= 10 ? timer.days.charAt(0) : 0
   const day1 = Number(timer.days) >= 10 ? timer.days.charAt(1) : timer.days.charAt(0)
   const hours1 = Number(timer.hours) >= 10 ? timer.hours.charAt(0) : 0

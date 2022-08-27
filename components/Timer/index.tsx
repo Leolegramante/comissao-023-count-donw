@@ -27,7 +27,7 @@ export const TimeCard = ({ countdownTimestampMs }: countdownProps) => {
     return () => clearInterval(intervalId);
   }, [countdownTimestampMs]);
 
-  function updateRemainingTime(countdown) {
+  function updateRemainingTime(countdown: number) {
     setRemainingTime(getRemainingTimeUntilMsTimestamp(countdown));
   }
 

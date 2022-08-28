@@ -7,10 +7,10 @@ import { TimeCard } from "../components/Timer"
 //1661914800000 OFICIAL
 const Home: NextPage = () => {
   return (
-    <Box bgGradient='linear(#F89A0A, #DB0A63)' color='#F3E9D9' height='100%' paddingTop='40px'>
+    <Box bgGradient='linear(#F89A0A, #DB0A63)' color='#F3E9D9' height='100%' w='100vw' paddingTop='40px'>
       <Heading>
-        <Center>
-          <Text fontSize='42px'>023 VAI AO BAR</Text>
+        <Center display='flex'>
+          <Text fontSize='42px' align='center'>023 NO LAB DA GROOVE</Text>
         </Center>
       </Heading>
       <Box marginTop="63px">
@@ -28,8 +28,8 @@ const Home: NextPage = () => {
       <Box marginTop='40px'>
         <Center>
           <Text fontSize='28px' fontWeight='medium' align='center'>
-            A senha para entrada no evento <br></br>
-            estará disponível no dia 31.08
+            A senha para entrada no evento
+            estará disponível no dia <strong>31.08</strong>
           </Text>
         </Center>
       </Box>
@@ -47,10 +47,10 @@ const Home: NextPage = () => {
               <MdLocationOn />
             </Icon>
             <Flex flexDirection='column' align='start' color='#F89A0A'>
-              <Text fontSize='28px' fontWeight='bold' >
+              <Text fontSize={['24px', '28px']} fontWeight='bold' >
                 LAB DA GROOVE
               </Text>
-              <Text fontSize='24px' fontWeight='bold' >
+              <Text fontSize={['18px', '24px']} fontWeight='bold' >
                 Avenida Barão de Itapura, 3309
               </Text>
             </Flex>

@@ -573,7 +573,7 @@
 
 "@chakra-ui/react@^2.2.9":
   version "2.2.9"
-  resolved "https://registry.npmjs.org/@chakra-ui/react/-/react-2.2.9.tgz"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-2.2.9.tgz#0e5500a4dc4a45ae941def4b1b3b1c1b9aa8dd57"
   integrity sha512-biW1C8b+pmw9gvpTWZOgSU9qxnOu1/nqjYsCY9eznSHIr50E3jeO987D2KEuegHPb7O0PfRdGmEaZzHnUTNweg==
   dependencies:
     "@chakra-ui/accordion" "2.0.11"

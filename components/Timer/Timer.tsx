@@ -20,55 +20,55 @@ export const Timer = ({ timer }: DefaultRemainingTime) => {
   const seconds1 = Number(timer.seconds) >= 10 ? timer.seconds.charAt(0) : 0
   const seconds2 = timer.seconds.charAt(1)
   return (
-    <Flex bgColor='#F89A0A' w='404px' height='131px' borderRadius='15px' >
+    <Flex bgColor='#F89A0A' w={[350, 404]} height='131px' borderRadius='15px' align='center' justify='center' >
       <HStack margin='30px 0 20px 10px'>
         <Flex flexDir='column' align='center'>
           <Flex flexDir='row' align='center' >
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{day0}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{day0}</Text>
             </Flex>
             <Text fontSize='28px' fontWeight='semibold'>:</Text>
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{day1}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{day1}</Text>
             </Flex>
           </Flex>
-          <Text fontSize='24px' fontWeight='bold'>Dias</Text>
+          <Text fontSize={['18px', '14px']} fontWeight='bold'>Dias</Text>
         </Flex>
         <Flex flexDir='column' align='center'>
           <Flex flexDir='row' align='center' >
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{hours1}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{hours1}</Text>
             </Flex>
             <Text fontSize='28px' fontWeight='semibold'>:</Text>
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{hours2}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{hours2}</Text>
             </Flex>
           </Flex>
-          <Text fontSize='24px' fontWeight='bold'>Horas</Text>
+          <Text fontSize={['18px', '14px']} fontWeight='bold'>Horas</Text>
         </Flex>
         <Flex flexDir='column' align='center'>
           <Flex flexDir='row' align='center' >
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{minutes1}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{minutes1}</Text>
             </Flex>
             <Text fontSize='28px' fontWeight='semibold'>:</Text>
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{minutes2}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{minutes2}</Text>
             </Flex>
           </Flex>
-          <Text fontSize='24px' fontWeight='bold'>Minutos</Text>
+          <Text fontSize={['18px', '14px']} fontWeight='bold'>Minutos</Text>
         </Flex>
         <Flex flexDir='column' align='center'>
           <Flex flexDir='row' align='center' >
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{seconds1}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{seconds1}</Text>
             </Flex>
             <Text fontSize='28px' fontWeight='semibold'>:</Text>
-            <Flex bgColor='#F3E9D9' h='60px' w='40px' align='center' justify='center' borderRadius='15px'>
-              <Text color='black' fontSize='32px' marginTop='10px'>{seconds2}</Text>
+            <Flex bgColor='#F3E9D9' h='60px' w={['30px', '40px']} align='center' justify='center' borderRadius={['5px', '15px']}>
+              <Text color='black' fontSize={['24px', '32px']} marginTop='10px'>{seconds2}</Text>
             </Flex>
           </Flex>
-          <Text fontSize='24px' fontWeight='bold'>Segundos</Text>
+          <Text fontSize={['18px', '14px']} fontWeight='bold'>Segundos</Text>
         </Flex>
       </HStack>
     </Flex>
